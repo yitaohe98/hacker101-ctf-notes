@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Sensitive local material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Capture/proxy tooling
+*.har
+*.burp
+
