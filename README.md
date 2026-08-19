@@ -1,28 +1,42 @@
-# Hacker101 CTF Notes
+# Web Security Lab
 
-Personal, learning-focused notes and write-ups for [Hacker101 CTF](https://ctf.hacker101.com/) challenges.
+A personal knowledge base for studying web security through notes, authorized labs, and practical workflows.
 
-Each challenge write-up records the approach, useful requests or commands, what I learned, and any follow-up ideas. These notes are intended only for authorized CTF targets.
+The aim is to build a useful mental model of web security, document what I learn, and turn repeated practice into a disciplined testing process.
 
-## Structure
+## Repository structure
 
 ```text
-challenges/
-  <challenge-name>/
-    README.md       # write-up
-    evidence/       # optional screenshots or sanitized request/response samples
-    scripts/        # optional helper scripts
-templates/
-  challenge-writeup.md
+web-security-lab/
+├── concepts/          # reusable explanations and vocabulary
+├── learning-notes/    # dated study-session notes
+├── playbook/          # living, practical testing workflows
+├── labs/              # indexes for intentionally vulnerable environments
+│   └── hacker101/
+└── hacker101ctf/      # original Hacker101 CTF project and write-ups
 ```
 
-## Adding a write-up
+## How to use it
 
-1. Copy `templates/challenge-writeup.md` into `challenges/<challenge-name>/README.md`.
-2. Fill in the sections as you solve the challenge.
-3. Keep secrets, session cookies, API keys, and personally identifying information out of commits.
+- Capture what happened in a study session in `learning-notes/`.
+- Promote durable lessons into `concepts/`.
+- Update `playbook/` when a lesson changes how you would test an application.
+- Keep lab-specific tricks and evidence in the relevant lab project.
 
-## Scope
+## Scope and safety
 
-Only test systems you own or are explicitly authorized to assess. Do not reuse these techniques against real-world targets without permission.
+Only test systems you own or are explicitly authorized to assess. For live programs, follow the program policy and keep target-specific, sensitive material out of a public repository.
 
+## Current milestones
+
+```text
+Complete introductory labs
+        ↓
+Build a repeatable web-security workflow
+        ↓
+Explore an explicitly in-scope target
+        ↓
+Document and validate a plausible finding
+        ↓
+Submit a clear report
+```

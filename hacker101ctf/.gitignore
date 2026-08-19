@@ -17,5 +17,3 @@ __pycache__/
 *.har
 *.burp
 
-# Private target notes and evidence
-private/
